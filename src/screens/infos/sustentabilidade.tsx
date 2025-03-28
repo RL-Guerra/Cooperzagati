@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const TelaApresentacao = () => {
+const TelaSustentabilidade = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Bem-vindo ao Cooperzagati</Text>
+      <Text style={styles.title}>Sustentabilidade</Text>
       <Text style={styles.description}>
-        Conscientize sua comunidade sobre o descarte correto do óleo de cozinha. Junte-se a nós nesta iniciativa!
+        O descarte incorreto de óleo afeta o meio ambiente. Recicle e ajude a proteger o planeta com a Cooperzagati!
       </Text>
     </View>
   );
@@ -33,4 +33,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default TelaApresentacao;
+export default TelaSustentabilidade;
