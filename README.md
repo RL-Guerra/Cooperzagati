@@ -6,7 +6,7 @@
 - **Escopo do Projeto**: O aplicativo irá fornecer informações sobre a ONG Cooperzagati, pontos de coleta de óleo, acompanhar a quantidade de óleo arrecadada e doada, além de permitir que usuários se registrem, se voluntariem e consultem dados de arrecadação.
 
 - **Tecnologias Utilizadas**:
-  - **Frontend**: React Native / Flutter
+  - **Frontend**: React Native
   - **Backend**: Node.js / Firebase (para autenticação e banco de dados)
   - **APIs**: Firebase, Google Maps (para localização), etc.
   - **Plataformas**: Android e iOS
