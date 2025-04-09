@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, Image } from 'react-native';
 
 const TelaLogin = () => {
   const [telefone, setTelefone] = useState('');
@@ -16,6 +16,10 @@ const TelaLogin = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Login</Text>
+      <Image
+        source={require('../../src/img/logo1.png')} // Substitua pela URL da sua imagem
+        style={styles.image}
+      />
       <TextInput
         style={styles.input}
         placeholder="Número de Telefone"
@@ -30,7 +34,9 @@ const TelaLogin = () => {
         onChangeText={setSenha}
         secureTextEntry
       />
-      <Button title="Entrar" onPress={handleLogin} />
+      <TouchableOpacity style={styles.button} onPress={handleLogin}>
+        <Text style={styles.buttonText}>Entrar</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -40,21 +46,41 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: '#fff',
   },
   title: {
-    fontSize: 24,
+    fontSize: 34,
     fontWeight: 'bold',
-    marginBottom: 20,
+    marginBottom: 50,
     textAlign: 'center',
+  },
+  image: {
+    width: 250,
+    height: 250,
+    marginBottom: 50,
+    borderRadius: '100%',
   },
   input: {
     height: 40,
-    borderColor: '#ccc',
+    width: '100%',
+    borderColor: '#1C1C1C',
     borderWidth: 1,
-    borderRadius: 5,
-    marginBottom: 15,
+    borderRadius: 15,
+    marginBottom: 22,
     paddingHorizontal: 10,
+  },
+  button: {
+    backgroundColor: '#000080',
+    borderRadius: 100,
+    paddingVertical: 15,
+    width: '100%',
+    alignItems: 'center',
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 18,
+    fontWeight: 'bold',
   },
 });
 
