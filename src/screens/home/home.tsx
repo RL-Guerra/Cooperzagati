@@ -2,10 +2,9 @@ import React from 'react';
 import { View, Text, StyleSheet, Image, Dimensions } from 'react-native';
 
 const { width, height } = Dimensions.get('window');
-
 export const TelaApresentacao = () => {
   const renderBackgroundGrid = () => {
-    const rows = 6; // ajuste conforme necessário
+    const rows = 6;
     const cols = 4;
     const pattern = [];
 
@@ -14,7 +13,7 @@ export const TelaApresentacao = () => {
         pattern.push(
           <Image
             key={`${row}-${col}`}
-            source={require('../../src/img/logo2.png')}
+            source={require('../../img/logo2.png')}
             style={[
               styles.patternImage,
               {
@@ -37,7 +36,7 @@ export const TelaApresentacao = () => {
       <View style={styles.overlay}>
         <Text style={styles.title}>Bem-vindo ao Cooperzagati</Text>
         <Image
-          source={require('../../src/img/logo1.png')}
+          source={require('../../img/logo1.png')}
           style={styles.image}
         />
         <Text style={styles.description}>
@@ -58,7 +57,7 @@ const styles = StyleSheet.create({
     width: 80,
     height: 80,
     position: 'absolute',
-    opacity: 0.09, // efeito marca d’água suave
+    opacity: 0.09,
   },
   overlay: {
     flex: 1,

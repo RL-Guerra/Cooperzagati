@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, Picker } from 'react-native';
 
-const TelaQueroDoar = () => {
+export const TelaQueroDoar = () => {
   const [quantidade, setQuantidade] = useState('');
   const [pontoSelecionado, setPontoSelecionado] = useState('');
   const [doacaoConfirmada, setDoacaoConfirmada] = useState(false);
@@ -42,7 +42,7 @@ const TelaQueroDoar = () => {
           <View style={styles.pickerContainer}>
             <Picker
               selectedValue={pontoSelecionado}
-              onValueChange={(itemValue) => setPontoSelecionado(itemValue)}
+              onValueChange={(itemValue: React.SetStateAction<string>) => setPontoSelecionado(itemValue)}
             >
               <Picker.Item label="Escolha um ponto..." value="" />
               {pontosDeColeta.map((ponto, index) => (

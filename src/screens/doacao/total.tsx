@@ -1,14 +1,14 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 
-const TelaDoacoesTotais = () => {
-  // Exemplo de dado estático — futuramente você pode buscar esse valor da API ou banco de dados
-  const totalDoado = 1245; // total em litros
+export const TelaDoacoesTotais = () => {
+  // Exemplo de dado estático — futuramente buscar esse valor da API ou banco de dados
+  const totalDoado = 1245;
 
   return (
     <View style={styles.container}>
       <Image
-        source={require('../../src/img/logo1.png')}
+        source={require('../../img/logo1.png')}
         style={styles.image}
       />
 

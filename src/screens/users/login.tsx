@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, Image } from 'react-native';
 
-const TelaLogin = () => {
+export const TelaLogin = () => {
   const [telefone, setTelefone] = useState('');
   const [senha, setSenha] = useState('');
 
@@ -17,7 +17,7 @@ const TelaLogin = () => {
     <View style={styles.container}>
       <Text style={styles.title}>Login</Text>
       <Image
-        source={require('../../src/img/logo1.png')} // Substitua pela URL da sua imagem
+        source={require('../../img/logo1.png')}
         style={styles.image}
       />
       <TextInput

@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, Text, StyleSheet, FlatList } from 'react-native';
 
+export const TelaHistoricoAtividades = () => {
+
 const doacoes = [
   { id: '1', data: '05/04/2025', quantidade: 2, local: 'Ponto A' },
   { id: '2', data: '22/03/2025', quantidade: 3.5, local: 'Ponto B' },
@@ -16,7 +18,6 @@ const metas = {
   anual: { meta: 60, doado: 10 },
 };
 
-const TelaHistoricoAtividades = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Histórico de Atividades</Text>

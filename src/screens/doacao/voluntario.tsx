@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 
-const TelaSejaVoluntario = () => {
+export const TelaSejaVoluntario = () => {
   const [nome, setNome] = useState('');
   const [telefone, setTelefone] = useState('');
   const [disponibilidade, setDisponibilidade] = useState('');
@@ -12,8 +12,6 @@ const TelaSejaVoluntario = () => {
       Alert.alert('Erro', 'Por favor, preencha todos os campos.');
       return;
     }
-
-    // Simula envio do formulário
     setFormEnviado(true);
   };
 

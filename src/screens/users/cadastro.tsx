@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, Image } from 'react-native';
 
-const TelaCadastro = () => {
+export const TelaCadastro = () => {
   const [nome, setNome] = useState('');
   const [telefone, setTelefone] = useState('');
   const [endereco, setEndereco] = useState('');
@@ -18,7 +18,7 @@ const TelaCadastro = () => {
     <View style={styles.container}>
       <Text style={styles.title}>Cadastro</Text>
       <Image
-        source={require('../../src/img/logo1.png')} // mesma imagem da tela de login
+        source={require('../../img/logo1.png')}
         style={styles.image}
       />
       <TextInput
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     width: 250,
     height: 250,
     marginBottom: 50,
-    borderRadius: 9999, // substitui '100%' que não funciona aqui
+    borderRadius: '100%',
   },
   input: {
     height: 40,
