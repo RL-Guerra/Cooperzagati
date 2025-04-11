@@ -1,5 +1,6 @@
+import { router } from 'expo-router';
 import React from 'react';
-import { View, Text, StyleSheet, Image, Dimensions } from 'react-native';
+import { View, Text, StyleSheet, Image, Dimensions, Button } from 'react-native';
 
 const { width, height } = Dimensions.get('window');
 export const TelaApresentacao = () => {
@@ -34,6 +35,8 @@ export const TelaApresentacao = () => {
       {renderBackgroundGrid()}
 
       <View style={styles.overlay}>
+        <Text style={styles.title}>Cooperzagati</Text>  
+        <Button title='MEnu' onPress={ () => router.navigate('/(stacks)/cadastro')}/>  ATENÇÃO      
         <Text style={styles.title}>Bem-vindo ao Cooperzagati</Text>
         <Image
           source={require('../../assets/img/logo1.png')}
