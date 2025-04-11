@@ -18,7 +18,7 @@ export const TelaCadastro = () => {
     <View style={styles.container}>
       <Text style={styles.title}>Cadastro</Text>
       <Image
-        source={require('../../img/logo1.png')}
+        source={require('../../assets/img/logo1.png')}
         style={styles.image}
       />
       <TextInput

@@ -17,7 +17,7 @@ export const TelaLogin = () => {
     <View style={styles.container}>
       <Text style={styles.title}>Login</Text>
       <Image
-        source={require('../../img/logo1.png')}
+        source={require('../../assets/img/logo1.png')}
         style={styles.image}
       />
       <TextInput
@@ -39,7 +39,7 @@ export const TelaLogin = () => {
       </TouchableOpacity>
     </View>
   );
-};
+};  
 
 const styles = StyleSheet.create({
   container: {

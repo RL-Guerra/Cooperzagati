@@ -7,7 +7,7 @@ export const TelaSustentabilidade = () => {
       <Text style={styles.title}>Sustentabilidade</Text>
 
       <Image
-        source={require('../../img/sustentabilidade.png')}
+        source={require('../../assets/img/sustentabilidade.png')}
         style={styles.image}
       />
 

@@ -8,7 +8,7 @@ export const TelaDoacoesTotais = () => {
   return (
     <View style={styles.container}>
       <Image
-        source={require('../../img/logo1.png')}
+        source={require('../../assets/img/logo1.png')}
         style={styles.image}
       />
 

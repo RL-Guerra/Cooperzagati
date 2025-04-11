@@ -13,7 +13,7 @@ export const TelaApresentacao = () => {
         pattern.push(
           <Image
             key={`${row}-${col}`}
-            source={require('../../img/logo2.png')}
+            source={require('../../assets/img/logo2.png')}
             style={[
               styles.patternImage,
               {
@@ -36,7 +36,7 @@ export const TelaApresentacao = () => {
       <View style={styles.overlay}>
         <Text style={styles.title}>Bem-vindo ao Cooperzagati</Text>
         <Image
-          source={require('../../img/logo1.png')}
+          source={require('../../assets/img/logo1.png')}
           style={styles.image}
         />
         <Text style={styles.description}>
