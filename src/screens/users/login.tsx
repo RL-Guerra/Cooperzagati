@@ -1,5 +1,6 @@
+import { router } from 'expo-router';
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, Image } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, Image, Button } from 'react-native';
 
 export const TelaLogin = () => {
   const [telefone, setTelefone] = useState('');
@@ -15,6 +16,7 @@ export const TelaLogin = () => {
 
   return (
     <View style={styles.container}>
+      <Button title='Home' onPress={ () => router.navigate('/(tabs)')}/>
       <Text style={styles.title}>Login</Text>
       <Image
         source={require('../../assets/img/logo1.png')}

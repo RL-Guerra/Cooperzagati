@@ -1,5 +1,7 @@
+import { router } from 'expo-router';
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, Picker } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, Button } from 'react-native';
+import { Picker } from '@react-native-picker/picker';
 
 export const TelaQueroDoar = () => {
   const [quantidade, setQuantidade] = useState('');
@@ -25,6 +27,8 @@ export const TelaQueroDoar = () => {
 
   return (
     <View style={styles.container}>
+      <Button title='Home' onPress={ () => router.navigate('/(tabs)')}/>
+        <br />
       <Text style={styles.title}>Quero Doar</Text>
 
       {!doacaoConfirmada ? (

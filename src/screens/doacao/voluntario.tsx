@@ -1,5 +1,6 @@
+import { router } from 'expo-router';
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, Button } from 'react-native';
 
 export const TelaSejaVoluntario = () => {
   const [nome, setNome] = useState('');
@@ -17,6 +18,8 @@ export const TelaSejaVoluntario = () => {
 
   return (
     <View style={styles.container}>
+      <Button title='Home' onPress={ () => router.navigate('/(tabs)')}/>
+        <br />
       {!formEnviado ? (
         <>
           <Text style={styles.title}>Seja um Voluntário</Text>

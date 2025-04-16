@@ -1,5 +1,6 @@
+import { router } from 'expo-router';
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, Image } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, Image, Button } from 'react-native';
 
 export const TelaCadastro = () => {
   const [nome, setNome] = useState('');
@@ -16,6 +17,7 @@ export const TelaCadastro = () => {
 
   return (
     <View style={styles.container}>
+      <Button title='Home' onPress={ () => router.navigate('/(tabs)')}/>
       <Text style={styles.title}>Cadastro</Text>
       <Image
         source={require('../../assets/img/logo1.png')}

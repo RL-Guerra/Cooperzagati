@@ -1,9 +1,11 @@
+import { router } from 'expo-router';
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, Button } from 'react-native';
 
 export const TelaSustentabilidade = () => {
   return (
     <View style={styles.container}>
+      <Button title='Home' onPress={ () => router.navigate('/(tabs)')}/>
       <Text style={styles.title}>Sustentabilidade</Text>
 
       <Image

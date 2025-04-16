@@ -1,5 +1,6 @@
+import { router } from 'expo-router';
 import React from 'react';
-import { View, Text, StyleSheet, FlatList } from 'react-native';
+import { View, Text, StyleSheet, FlatList, Button } from 'react-native';
 
 export const TelaHistoricoAtividades = () => {
 
@@ -20,6 +21,8 @@ const metas = {
 
   return (
     <View style={styles.container}>
+      <Button title='Home' onPress={ () => router.navigate('/(tabs)')}/>
+        <br />
       <Text style={styles.title}>Histórico de Atividades</Text>
 
       {/* Doações */}

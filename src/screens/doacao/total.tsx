@@ -1,5 +1,6 @@
+import { router } from 'expo-router';
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, Button } from 'react-native';
 
 export const TelaDoacoesTotais = () => {
   // Exemplo de dado estático — futuramente buscar esse valor da API ou banco de dados
@@ -7,6 +8,8 @@ export const TelaDoacoesTotais = () => {
 
   return (
     <View style={styles.container}>
+      <Button title='Home' onPress={ () => router.navigate('/(tabs)')}/>
+      <br />
       <Image
         source={require('../../assets/img/logo1.png')}
         style={styles.image}
