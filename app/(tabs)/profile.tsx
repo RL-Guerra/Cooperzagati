@@ -6,11 +6,11 @@ export default function ProfileScreen() {
     <View style={styles.container}>
       <View style={styles.header}>
         <Image
-          source={require('../../src/assets/img/logo1.png')}
+          source={require('../../src/assets/img/logo3.png')}
           style={styles.avatar}
         />
-        <Text style={styles.name}>Nome do Usuário</Text>
-        <Text style={styles.email}>usuario@email.com</Text>
+        <Text style={styles.name}>Administrativo</Text>
+        <Text style={styles.email}>adm.guerra@cooperzagati.com</Text>
       </View>
 
       <View style={styles.menuContainer}>
